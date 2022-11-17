@@ -1,0 +1,53 @@
+<!-- 
+    CSCI 2408 Computer Graphics Fall 2022 
+    (c)2022 by Name Surname 
+    Submitted in partial fulfillment of the requirements of the course.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Game of Life</title>
+	<canvas id = "canvas" ></canvas>
+	<button id = "startBtn">Rand Start/Continue</button>
+	<button id = "tickBtn">1 Tick/step</button>
+	<button id = "stopBtn">Stop</button>
+	<button id = "delayBtn">New Delay Time Save</button>
+	<label for="delayLbl">Delay between ticks:</label>
+    <input type="text" id="delayInp" placeholder="In Milliseconds">
+	<input type="color" value="#FF0000" id = "colorOfDeadInp" style="position:absolute; top: 80px; right: 650px;">
+	<input type="color" value="#0000FF" id = "colorOfLiveInp" style="position:absolute; top: 160px; right: 650px;">
+	<label for="delayLbl" style="position:absolute; top: 85px; right: 450px;">Change Color Of Dead Cells</label>
+	<label for="delayLbl" style="position:absolute; top: 165px; right: 450px;">Change Color of Alive Cells</label>	
+	<script type = "text/javascript" src="life.js"></script>
+		
+	<style>
+button{	
+	position:relative;
+	top: -740px;
+	right: 290px;
+	display: table-column-group;
+	
+}
+label{
+	position:absolute;
+	top: 20px;
+	right: 600px;
+	
+}
+input{
+	
+	position:absolute;
+	top: 20px;
+	right: 400px;
+	
+}
+	</style>
+	
+</head>
+<body>
+</body>
+</html>
