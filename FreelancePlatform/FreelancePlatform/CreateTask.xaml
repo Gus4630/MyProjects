@@ -1,0 +1,46 @@
+﻿<Page x:Class="FreelancePlatform.CreateTask"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FreelancePlatform"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="CreateTask">
+
+    <Grid Background="AliceBlue">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2.5*"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <TextBox Name="TaskInfoTitle" Grid.Column="0" Width="400" Height="30">Title</TextBox>
+
+            <StackPanel Grid.Column="1" HorizontalAlignment="left">
+                <TextBox Name="CreatedTimeInfo" >Created Time:</TextBox>
+                <TextBox Name="DeadlineTimeInfo">Deadline Time:</TextBox>
+            </StackPanel>
+
+        </Grid>
+        <TextBox Name="AboutTaskInfo" Height="100" Width="700" HorizontalContentAlignment="Center" Grid.Row="1">About</TextBox>
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Left" Width="600">
+            <TextBox Height="100" Width="400" Name="SkillsTaskInfo" Grid.Row="2" TextAlignment="Left">Skills</TextBox>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Right" Width="200">
+            <TextBox Name="PriceTaskInfo">Price</TextBox>
+            <TextBox Name="ActiveTaskInfo">Active</TextBox>
+        </StackPanel>
+        <Button Grid.Row="3" Width="200" VerticalAlignment="Center" Click="Button_Click"> Submit</Button>
+
+
+    </Grid>
+    
+</Page>

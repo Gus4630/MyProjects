@@ -1,0 +1,89 @@
+﻿<Page x:Class="FreelancePlatform.ExecutorPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FreelancePlatform"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ExecutorPage">
+
+    <Grid>
+
+        <Grid>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    
+                <Button Width="260" Content="Current Orders" Click="Button_Click"></Button>
+                    <Button Width="270" Content="Search for tasks" Click="Button_Click_1"></Button>
+                    <Button Width="270" Content="Account Info" Click="Button_Click_2"></Button>
+                </StackPanel>
+                
+                <!--<TabControl Foreground="Red" Grid.Row="0" FontSize="15" >
+                    <TabItem Header="Current Orders" Background="Aqua">
+                        <Grid Background="Wheat">
+                            <ListView Name="currentOrders" ItemsSource="{Binding Accepted_Tasks}">
+                                <ListView.View>
+                                    <GridView x:Name="grdTest">
+                                        <GridViewColumn Header="Title" Width="100" DisplayMemberBinding="{Binding Title}"/>
+                                        <GridViewColumn Header="Deadline" DisplayMemberBinding="{Binding Deadline}" />
+                                        <GridViewColumn Header="Executor" DisplayMemberBinding="{Binding Executor}"/>
+                                        <GridViewColumn Header="About" Width="100" DisplayMemberBinding="{Binding About}"/>
+                                        <GridViewColumn Header="Skills" DisplayMemberBinding="{Binding Skills}"/>
+                                        <GridViewColumn Header="Price" DisplayMemberBinding="{Binding Price}"/>
+                                        <GridViewColumn Header="Active" Width="100" DisplayMemberBinding="{Binding Is_active}"/>
+                                    </GridView>
+                                </ListView.View>
+                            </ListView>
+                        </Grid>
+
+                    </TabItem>
+                    <TabItem Header="Search for Tasks" Background="Aqua">
+                        <Grid Background="AntiqueWhite">
+                            <ListView Name="createdTsasks" ItemsSource="{Binding createdTasks}">
+                                <ListView.View>
+                                    <GridView>
+                                        <GridViewColumn Header="Title" Width="100" DisplayMemberBinding="{Binding Title}"/>
+                                        <GridViewColumn Header="Deadline" DisplayMemberBinding="{Binding Deadline}" />
+                                        <GridViewColumn Header="Executor" DisplayMemberBinding="{Binding Executor}"/>
+                                        <GridViewColumn Header="About" Width="100" DisplayMemberBinding="{Binding About}"/>
+                                        <GridViewColumn Header="Skills" DisplayMemberBinding="{Binding Skills}"/>
+                                        <GridViewColumn Header="Price" DisplayMemberBinding="{Binding Price}"/>
+                                        <GridViewColumn Header="Active" Width="100" DisplayMemberBinding="{Binding Is_active}"/>
+                                    </GridView>
+                                </ListView.View>
+                            </ListView>
+                        </Grid>
+
+                    </TabItem>
+                    <TabItem Header="Account Info" Background="Aqua">
+                        <TextBlock TextAlignment="Center" Text="Account Balance:" Background="Aqua"/>
+                    </TabItem>
+                </TabControl>-->
+
+
+
+                <Border CornerRadius="10" Grid.RowSpan="2" Grid.Row="1" >
+                    <Border.Background>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#7be9f6" Offset="0.0"/>
+                            <GradientStop Color="#f083da" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+                </Border>
+                <Button Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Right" Click="btn_click2">Exit</Button>
+                <Frame Name="TabFrame" Grid.Row="1"
+                 Content="{Binding CurrentPage}"
+                NavigationUIVisibility="Hidden"                       
+                Opacity="{Binding FrameOpacity}"
+                       />
+            </Grid>
+        </Grid>
+
+    </Grid>
+</Page>
