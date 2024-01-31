@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/ed97e37c51.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><i class="fa-solid fa-globe" style="color: #1b69ee;"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul id="nav_ul" class="navbar-nav me-auto mb-2 mb-lg-0 top-menu">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Tasks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Orders</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            About
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Careers</a></li>
+                            <li><a class="dropdown-item" href="#">About Company</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Contacts</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item d-inline-grid me-2">
+                        <a class="nav-link active" href="#" style="color: #fff;">Favourites <i class="fa-solid fa-heart" style="color: #d23232;"></i></a>
+                    </li>
+                </ul>
+
+
+                
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success " type="submit">Search</button>
+                </form>
+                
+                
+                <li class="d-inline-block dropdown ms-5 ps-0 pe-2">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        <i class="fa-solid fa-user-tie" style="color: #41e69f;"></i></a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Careers</a></li>
+                        <li><a class="dropdown-item" href="#">About Company</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Contacts</a></li>
+                    </ul>
+                </li>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container-fluid my-carousel">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel"
+            data-bs-interval="3000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="pictures/first_pic.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="pictures/second_pic.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="pictures/third_pic.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <section class="main-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 text-center"><i class="fa-solid fa-shield-virus fa-7x fa-beat" style="color: #2d8f4e;"></i>
+                    <span style="margin-top: 5px; white-space: pre-wrap;">
+
+<span style="font-weight: bolder; font-size: x-large; color: #2d8f4e;">Secure Payments</span>
+Your payment will be transferred to the performer only after confirmation of the work.</span>
+                </div>
+                <div class="col-lg-4 .col-sm-6 text-center"><i class="fa-solid fa-sack-dollar fa-7x fa-beat" style="color: #2d8f4e;"></i>
+                    <span style="margin-top: 5px; white-space: pre-wrap;">
+               
+                    <span style="font-weight: bolder; font-size: x-large; color: #2d8f4e;">Money-back guarantee</span>                        
+You can always get your money back if you are not satisfied with the result of the work.</span>
+                </div>
+                <div class="col-lg-4 .col-sm-6 text-center"><i class="fa-solid fa-users fa-7x fa-beat" style="color: #2d8f4e;"></i>
+                    <span style="margin-top: 5px; white-space: pre-wrap;">
+               
+                        <span style="font-weight: bolder; font-size: x-large; color: #2d8f4e;">Reliable performers</span>                        
+Performers are allowed to work when all mandatory requirements are met</span>
+                </div>
+        
+                <hr style="margin-top: 20px;">
+                <hr>
+                <hr>
+
+            <!--FIRST-->
+            <div class="col-lg-3 col-sm-6 mb-3">                
+                <div class="product-card">
+                    <div class="product-thumb">
+                    <a href="#"><img src="pictures/designer.jpg"></a>
+                </div>
+                        <div class="product-details">
+                            <h4><a href="#">3D Art Creation</a></h4>
+                            <p>3D Painting on your walls.</p>
+                            <div class="product-bottom-details d-flex justify-content-between">
+                                <div class="product-price">
+                                    <small>$40</small>
+                                    $20                                
+                                </div>
+                                <div class="product-links">
+                                    <a href="#"><i class="fa-solid fa-heart" style="color: #d23232;"></i></a>
+                                </div>
+                            </div>
+                        </div>                                        
+                </div>
+        </div>
+
+            <!--SECOND-->
+            
+            <div class="col-lg-3 col-sm-6 mb-3">
+                
+                <div class="product-card">
+                    <div class="product-thumb">
+                    <a href="#"><img src="pictures/second_pic.jpg"></a>
+                    </div>
+                        <div class="product-details">
+                            
+                            <a href="#">Desktop Accessories</a>
+                                                
+                            <p>Multiple desktop accessories for easing the job</p>
+                            <div class="product-bottom-details d-flex justify-content-between">
+                                <div class="product-price">
+                                    <small>$20</small>
+                                    $10                                
+                                </div>
+                                <div class="product-links">
+                                    <a href="#"><i class="fa-solid fa-heart" style="color: #d23232;"></i></a>
+                                </div>
+                            </div>
+                        </div>                                        
+                </div>
+            
+            </div>
+        
+
+            <!--THIRD-->
+            <div class="col-lg-3 col-sm-6 mb-3">
+                <div class="product-card">
+                    <div class="product-thumb">
+                    <a href="#"><img src="pictures/third_pic.jpg"></a>
+                </div>
+                        <div class="product-details">
+                            <h4><a href="#">Soft Touch Keyboard</a></h4>
+                            <p>Limited amount of keyboards today only!</p>
+                            <div class="product-bottom-details d-flex justify-content-between">
+                                <div class="product-price">
+                                    <small>$40</small>
+                                    $20                                
+                                </div>
+                                <div class="product-links">
+                                    <a href="#"><i class="fa-solid fa-heart" style="color: #d23232;"></i></a>
+                                </div>
+                            </div>
+                        </div>                                        
+            </div>
+        </div>
+
+            <!--FOURTH-->
+            <div class="col-lg-3 col-sm-6 mb-3">
+                <div class="product-card">
+                    <div class="product-thumb">
+                    <a href="#"><img src="pictures/designer.jpg"></a>
+                </div>
+                        <div class="product-details">
+                            <h4><a href="#">Color 3D Palette</a></h4>
+                            <p>I will sell the color palette where you can create 3D paintings on wall</p>
+                            <div class="product-bottom-details d-flex justify-content-between">
+                                <div class="product-price">
+                                    <small>$40</small>
+                                    $20                                
+                                </div>
+                                <div class="product-links">
+                                    <a href="#"><i class="fa-solid fa-heart" style="color: #d23232;"></i></a>
+                                </div>
+                            </div>
+                        </div>                                        
+            </div>
+        </div>
+    </div>
+        </div>
+    </section>
+
+    <footer>
+        <section class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-6">
+                        <h4>Information</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Main</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Payment and Delivery</a></li>
+                            <li><a href="#">Contacts</a></li>
+                        </ul>
+                    </div>
+                        
+                    <div class="col-md-3 col-6">
+                        <h4>Working Hours</h4>
+                        <ul class="list-unstyled">
+                            <li>Baku city, Nariman Narimanov</li>
+                            <li>Mon-Sun 24/7</li>
+                            <li>No Breaks</li>                            
+                        </ul>
+                    </div>
+                    
+                    <div class="col-md-3 col-6">
+                        <h4>Contacts</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="tel:+994707546464">+994 70 754-64-64</a></li>
+                            <li><a href="tel:+994997546464">+994 99 754-64-64</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <h4>Social Media</h4>
+                        <div class="footer-icons">
+                            <a href="#"><i class="fab fa-facebook-f fa-xl" style="color: #3b5998;"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram fa-xl" style="color: #f953e3;"></i></a>
+                            <a href="#"><i class="fab fa-linkedin fa-xl" style="color: #0A66C2;"></i></a>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+
+<!--font-family: 'Lato', sans-serif; -->
+
+</html>
